@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADFA | Inscribirse </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/botones.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/tramites.css">
+    <link rel="shortcut icon" href="img/logoo.png" type="image/x-icon">
+    <script src="js/jspdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.13/jspdf.plugin.autotable.min.js"></script>
+ 
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html"><img src="img/logoo.png" alt="Logo de Fe y Alegría"></a>
+                <a href="index.html"> <h4> Academia Deportiva <br>
+                    Fe y Alegría</h4></a>           
+                </div>
+
+            <div class="menu" id="show-menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                        <li><a href="nosotros.html"><i class="fas fa-users"></i> Nosotros</a></li>
+                        <li><a href="programas.html"><i class="fas fa-tv"></i> Programas</a></li>
+                        <li><a href="tramites.html"><i class="fas fa-user-plus"></i> Tramites</a></li>
+                        <li><button class="button-81" onclick="enviarMensajeMessenger()">Contactanos</button></li>
+                    </ul>                   
+                </nav>
+            </div>
+        </div>
+        <div id="icon-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+
+<div class="container-content">
+    <h1>Trámites</h1>
+
+    <div class="formulario current  ">
+        <h3>Paso 1: Completar los Datos</h3>
+        <br>
+
+        <form>
+            <div class="tipo_tramite">
+                <label for="tramite_tipo">Tipo de trámite</label>
+                <select id="tramite_tipo" required>
+                    <option value="">Selecciona un trámite</option>
+                    <option value="inscripcion">Inscripción</option>
+                </select>
+            </div>
+
+            <h4>Datos del menor</h4>
+
+            <div class="data_personal">
+                <label for="nombres">Nombres</label>
+                <input type="text" id="nombres"  autocomplete="no" required>
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" required>
+                <label for="dni">DNI del menor</label>
+                <input type="text" id="dni" maxlength="8" pattern="\d{8}" title="Ingresa un DNI válido de 8 dígitos" required>
+            </div>
+
+            <h4>Datos de Contacto</h4>
+
+            <div class="data_contacto">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" autocomplete="on"  placeholder="example@gmail.com">
+                <label for="direccion">Dirección</label>
+                <input type="text" id="direccion" required>
+                <label for="telefono">Teléfono</label>
+                <input type="text" id="telefono" required>
+            </div>
+
+            <h4>Información del responsable de la Inscripción</h4>
+
+            <div class="data_apoderado">
+                <label for="apoderado">Nombre de Apoderado</label>
+                <input type="text" id="apoderado" required>
+                <label for="apellidos_apoderado">Apellidos del Apoderado</label>
+                <input type="text" id="apellidos_apoderado" required>
+            </div>
+
+            <h4>Datos de la condición de salud del menor</h4>
+
+            <div class="data_adicional">
+
+                <label for="discapacidad">¿Cuenta con algun problema de salud?</label>
+                <input type="text" id="discapacidad" placeholder="responder SI o NO, o especificar si es necesario" required>
+                
+            </div>
+            
+
+            <div class="boton">
+                <button type="submit" class="button-18">Generar PDF</button>
+            </div>
+          
+        </form>
+       
+        
+    </div>
+<br>
+    <div class="formulario2">
+        <h3>Paso 2: Enviar Ficha de Inscripción (PDF)</h3>
+        
+        <form  class="form2" id="formSubirPdf" enctype="multipart/form-data">
+            <br>
+ 
+            <p>*Aquí debes de enviar el pdf que generaste anteriormente.</p>
+            
+
+            <button  class="button-18"  onclick="enviarMensaje()">Enviar pdf</button>  
+        </form>
+
+        <br>
+         <a style="color: blue; text-decoration: underline; font-size: 0.8rem;" href="#canales">La respuesta a tu solicitud podría ser de 24 horas máximo</a>
+  
+    </div>      
+    
+</div>
+
+
+
+    <div class="container-footer">
+ 
+        <footer id="canales">
+            <a href="https://www.facebook.com/www.darwindominguez.com.pe" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.tiktok.com/@elpopulardc?_t=8iVSaHeKHzx&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/teacher_dc/?igsh=dmVhZmVnZXNkMjhi" target="_blank"><i class="fab fa-instagram"></i></a>
+            
+            <p class="copyright">© 2024 Todos los derechos reservados | Academia Deportiva Fe y Alegría</p>
+        </footer>
+        
+    </div>
+ 
+<script src="js/mensajeWssp.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/generarPdf.js"></script>
+
+</body>
+</html>

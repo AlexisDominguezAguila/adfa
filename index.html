@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia Deportiva Fe y Alegría</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="shortcut icon" href="img/logoo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/botones.css">
+    <link rel="stylesheet" href="css/indexStyles.css">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>    
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html"><img src="img/logoo.png" alt="Logo de Fe y Alegría"></a>
+                <a href="index.html"> <h4> Academia Deportiva <br>
+                    Fe y Alegría</h4></a>
+            </div>
+
+            <div class="menu" id="show-menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                        <li><a href="nosotros.html"><i class="fas fa-users"></i> Nosotros</a></li>
+                        <li><a href="programas.html"><i class="fas fa-tv"></i> Programas</a></li>
+                        <li><a href="tramites.html"><i class="fas fa-user-plus"></i> Tramites</a></li>
+                        <li><button class="button-81" onclick="enviarMensajeMessenger()">Contactanos</button></li>
+                    </ul>                   
+                </nav>
+            </div>
+        </div>
+        <div id="icon-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <div class="container-content">
+
+        <div id="slider-container">
+<br>
+            <div id="slider">
+                <div class="slide"><img src="img/imagen5.jpg" alt="Imagen 1"></div>
+                <div class="slide"><img src="img/imagen6.jpg" alt="Imagen 2"></div>
+                <div class="slide"><img src="img/imagen7.jpg" alt="Imagen 3"></div>
+                <div class="slide"><img src="img/imagen8.jpg" alt="Imagen 4"></div>
+            </div>
+    
+            <div id="slider-controls">
+                <button class="slider-btn" onclick="prevSlide()"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-btn" onclick="nextSlide()"><i class="fas fa-chevron-right"></i></button>
+            </div>
+             
+            
+        </div>
+        <br>
+        <div class="contenido-principal">
+            <h1>Academia Deportiva Fe y Alegría</h1>
+            <br>
+
+           <i><h2>"Ningún jugador es tan bueno como Todos juntos"</h2></i> 
+            <br>    
+            <p>El enfoque principal de la academia es proporcionar a los estudiantes una educación integral y de calidad.
+                 La academia se centra en desarrollar todas las habilidades académicas, intelectuales y emocionales
+                  de los estudiantes, brindándoles las herramientas necesarias para alcanzar su máximo potencial deportivo.
+            <br>
+            <br>
+               La academia también se preocupa por ofrecer un ambiente de aprendizaje estimulante y motivador.
+                Se promueve la participación activa de los estudiantes, se utilizan métodos pedagógicos innovadores
+                 y se brinda apoyo individualizado para satisfacer las necesidades de cada estudiante.</p> <br>
+
+            <a href="tramites.html"> <button  class="button-18" role="button">Inscribirse Ahora</button> </a>  
+            <br>
+        </div>
+        
+    </div>
+
+
+    <div class="container-footer">
+ 
+        <footer>
+     
+            <a href="https://www.facebook.com/www.darwindominguez.com.pe" target="_blank" ><i class="fab fa-facebook"></i>  </a>
+            <a href="https://www.tiktok.com/@elpopulardc?_t=8iVSaHeKHzx&_r=1" target="_blank"><i class="fab fa-tiktok"></i>  </a>
+            <a href="https://www.instagram.com/teacher_dc/?igsh=dmVhZmVnZXNkMjhi" target="_blank"><i class="fab fa-instagram"></i>  </a>
+        
+            <p class="copyright">© 2024 Todos los derechos reservados | Academia Deportiva Fe y Alegría</p>
+        </footer>
+    </div>
+
+<script src="js/mensajeWssp.js"></script>
+<script src="js/slide.js"></script>
+<script src="js/navbar.js"></script>
+    
+</body>
+</html>

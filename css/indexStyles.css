@@ -1,0 +1,98 @@
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+         .container-content{
+          
+            flex-direction: column;
+            width: 100%;
+            margin: auto;
+            margin-top: 40px;  
+        }
+        .container-content h1 {
+            display: flex;
+            justify-content: center;
+        }
+       
+        .contenido-principal {
+        padding: 50px;
+        text-align: center; 
+        }
+
+        .contenido-principal h2 {
+            text-align: center;
+        }
+
+        .contenido-principal p {
+            text-align: justify; 
+            word-spacing: 2px; 
+        }
+        .container-content{
+            width: 100%;
+            margin: auto;
+            margin-top: 80px;
+            display: flex;
+            justify-content: center;
+        }
+        
+        #slider-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            max-width: 100%;  
+            margin: auto;
+            height: 550px;  
+        }
+        
+        #slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            height: 100%;  
+        }
+        
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+            overflow: hidden;  
+        }
+        
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;  
+        }
+        
+        #slider-controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+        
+        .slider-btn {
+            background: transparent;
+            color: rgb(243, 239, 239);
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        
+            @media screen and (max-width: 600px) {
+            #slider-container {
+                height: 150px; 
+            }
+            .contenido-principal{
+                padding: 5px;
+            }
+            .container-content{
+                margin-top: 70px;
+            }
+          
+
+        }

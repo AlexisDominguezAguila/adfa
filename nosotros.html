@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADFA | Sobre Nosotros</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="shortcut icon" href="img/logoo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/botones.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/nosotrosStyles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script> 
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html"><img src="img/logoo.png" alt="Logo de Fe y Alegría"></a>
+                <a href="index.html"> <h4> Academia Deportiva <br>
+                    Fe y Alegría</h4></a>
+            </div>
+
+            <div class="menu" id="show-menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                        <li><a href="nosotros.html"><i class="fas fa-users"></i> Nosotros</a></li>
+                        <li><a href="programas.html"><i class="fas fa-tv"></i> Programas</a></li>
+                        <li><a href="tramites.html"><i class="fas fa-user-plus"></i> Tramites</a></li>
+                        <li><button class="button-81" onclick="enviarMensajeMessenger()">Contactanos</button></li>
+                    </ul>                 
+                </nav>
+            </div>
+        </div>
+        <div id="icon-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <div class="container-content">
+        <h1>Acerca de Nosotros</h1>
+
+        <div class="section-description">
+            <p>
+                La Academia de Fútbol se enorgullece de ofrecer una formación integral y de calidad a jóvenes apasionados por el fútbol.
+                Nuestra misión es desarrollar no solo habilidades futbolísticas excepcionales, sino también fomentar valores como el trabajo en equipo,
+                la disciplina y el respeto. Descubre más sobre lo que nos hace únicos.
+            </p>
+        </div>
+
+        <div class="video-container">
+            <video autoplay muted width="auto" height="auto" controls>
+                <source src="img/post.mp4" type="video/mp4">
+            </video>
+            
+        </div>
+        <h2>Testimonios</h2>
+        <br>
+        <div id="slider-container">
+            <br>
+                        <div id="slider">
+                            <div class="slide">
+                                <p><i> "La Academia de Fútbol ha sido una experiencia transformadora para mi hijo.
+                                    El equipo técnico es excepcional y se nota el compromiso con el desarrollo individual de cada jugador."</i></p>
+                            <p><strong>Julia</strong></p>
+                                
+                            </div>
+                            <div class="slide">
+                                <p><i> "Desde que mi hija se unió a la academia, ha demostrado un gran progreso en sus habilidades y,
+                                    lo más importante, ha encontrado un ambiente positivo para crecer como persona y deportista."</i></p>
+                            <p><strong>Fernando</strong></p>
+                                
+                            </div>
+                            <div class="slide">
+                                <p><i> "Desde que mis hijos se unieron a la academia, ha demostrado un gran progreso en sus habilidades y,
+                                    lo más importante, ha encontrado un ambiente positivo para crecer como persona y deportista."</i></p>
+                            <p><strong>Carlos</strong></p>
+                                  
+                            </div>
+                             
+                        </div>
+                
+                        <div id="slider-controls">
+                            <button class="slider-btn" onclick="prevSlide()" aria-label="Slide anterior"><i class="fas fa-chevron-left"></i></button>
+                            <button class="slider-btn" onclick="toggleAutoPlay()" aria-label="Reproducir/Pausar"><i class="fas fa-play"></i></button>
+                            <button class="slider-btn" onclick="nextSlide()" aria-label="Slide siguiente"><i class="fas fa-chevron-right"></i></button>
+                        </div>                                     
+                    </div>
+
+    </div>
+
+    <div class="container-footer">
+        <footer>
+     
+            <a href="https://www.facebook.com/www.darwindominguez.com.pe" target="_blank" ><i class="fab fa-facebook"></i>  </a>
+            <a href="https://www.tiktok.com/@elpopulardc?_t=8iVSaHeKHzx&_r=1" target="_blank"><i class="fab fa-tiktok"></i>  </a>
+            <a href="https://www.instagram.com/teacher_dc/?igsh=dmVhZmVnZXNkMjhi"><i class="fab fa-instagram"></i>  </a>
+        
+            <p class="copyright">© 2024 Todos los derechos reservados | Academia Deportiva Fe y Alegría</p>
+        </footer>
+    </div>
+
+<script src="js/navbar.js"></script>
+<script src="js/mensajeWssp.js"></script>
+<script src="js/slide.js"></script>
+    
+</body>
+</html>
